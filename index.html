@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link href="node_modules/normalize.css/" rel = "stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <script src="https://kit.fontawesome.com/7fc14f5637.js" crossorigin="anonymous"></script>
+ 
+    
+    <title>OK Humedades</title>
+</head>
+<body>
+   <header>
+    <div class="barra-sup">
+        <div class="barra-sup__logo">
+          <img src="" alt="">
+        </div>
+        <div class="barra-sup__tel">
+          <a  href="https://web.whatsapp.com"><p><i class="fas fa-phone-alt"></i>911590325</p></a>
+        </div>
+        <div class="barra-sup__iconos">
+          <a  href="www.instagram.com"><i class="fab fa-instagram-square"></i></a>
+          <a  href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Logo -->
+          <a class="navbar-brand" href="#">
+              <img src="/images/logook.png" alt="Ok Humedades" width="" height="" class="d-inline-block align-text-top">
+          </a>
+          <!-- Botón toogle -->
+          <div>
+            <span>MENÚ</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <!-- Menú -->
+          <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:600px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Humedades
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Condensación</a></li>
+                    <li><a class="dropdown-item" href="#">Capilaridad</a></li>
+                    <li><a class="dropdown-item" href="#">Filtración</a></li>
+                    <li><a class="dropdown-item" href="#">Infiltración lateral</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Salud y Humedades</a>
+              </li>
+              <li class="nav-item boton"  id="diag-boton">
+                <a class="nav-link" href="#">Diagnosticar gratis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="portada">
+        <div class="portada__text">
+            <div class="portada__text_div1" >
+                <p class="">La empresa <b>mejor valorada</b></p>
+                <p class="portada__text_div1_p2">de España <b class="estrellas">&#9733&#9733&#9733&#9733&#9733</b></p>
+                <div class="linea"></div>
+            </div>
+            <div class="portada__text_div2">
+              <p class=""><b>Apasionados del</b> buen servicio</p>
+              <p class="">Nuestro mejor premio: TU SATISFACCIÓN</p>
+              <p>Nuestra mejor certificación: TU RECOMENDACIÓN</p>
+            </div>
+            <div class="diagnosticar-btn">
+              <a href="diagnosticar.html"><button class="boton" type="">Diagnosticar gratis <i class="fas fa-play"></i></button></a>
+            </div>
+            <div class="formulario">
+              <div>
+                <form action="">
+                  <input class="input_form" type="text" name="nombre" placeholder="Nombre" id="">
+                  <input class="input_form" type="tel" name="telefono" placeholder="Teléfono/móvil" id="">
+                  <input class="input_form" type="email" name="email" placeholder="Email" id="">
+                  <select class="input_form" name="tipo_de_humedad"  id="">
+                    <option class="option_sel" selected="true" value="Tipo de humedad" disabled="disabled" >Tipo de Humedad</option>
+                    <option class="option_sel" value="Condensación">Condensación</option>
+                    <option class="option_sel" value="Capilaridad">Capilaridad</option>
+                    <option class="option_sel" value="Filtración">Filtración</option>
+                    <option class="option_sel" value="Infiltración lateral">Infiltración lateral</option>
+                  </select>
+                  <button class="boton input_form" type="submit">Enviar</button>
+                </form>
+              </div>
+            </div>
+        </div>
+        
+        <div class="portada__img">
+          <img src="/images/familia-okhumedades.webp" alt="" class="flia">
+        </div>
+        
+  </div>
+  </header>
+  <!-- Seccion primera -->
+  <section class="tarjetas">
+    <h2>Tipos de <b>humedades</b></h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+      <div class="col">
+        <div class="card text-dark h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Condensación</h5>
+            <p class="card-text">La actividad cotidiana en un domicilio, como cocinar, bañarse, ejercitarse o siemplemente permanecer largos periodos en casa, crean acumulación de agua en el ambiente, originando que las ventanas goteen, manchas de moho en las paredes y condiciones peligrosas de salud. Este fenómeno lo provoca la humedad por condensación.</p>
+          </div>
+          <img src="/images/card-humedades1.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-dark h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Capilaridad</h5>
+            <p class="card-text">El día a día y la actividad que se realiza en un domicilio puede originar acumulación de agua en el ambiente de nuestra vivienda. Este fenómeno (condensación) es el que provoca la humedad por condensación y se produce cuando la temperatura interior de la vivienda es superior a la del exterior...</p>
+          </div>
+          <img src="/images/card-capilaridad.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-dark h-100 w-100"> 
+          <div class="card-body">
+            <h5 class="card-title">Filtración</h5>
+            <p class="card-text">El día a día y la actividad que se realiza en un domicilio puede originar acumulación de agua en el ambiente de nuestra vivienda. Este fenómeno (condensación) es el que provoca la humedad por condensación y se produce cuando la temperatura interior de la vivienda es superior a la del exterior...</p>
+          </div>
+          <img src="/images/card-filtracion.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>  
+      <div class="col">
+        <div class="card text-dark h-100 w-100">
+          <div class="card-body">
+            <h5 class="card-title">Infiltración lateral</h5>
+            <p class="card-text">El día a día y la actividad que se realiza en un domicilio puede originar acumulación de agua en el ambiente de nuestra vivienda. Este fenómeno (condensación) es el que provoca la humedad por condensación y se produce cuando la temperatura interior de la vivienda es superior a la del exterior...</p>
+          </div>
+          <img src="/images/card-infiltracion.webp" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- VENTAJAS -->
+  <section class="ventajas">
+    <p class="titulos">Por qué elegir a <b>OK humedades</b></p>
+    <h2>Somos la empresa mejor valorada de España</h2>
+    <ul>
+      <li><b>Calidad</b> de servicio <b>garantizada.</b></li>
+      <li><b>Compromiso</b> con el cuidado de tu vivienda <b>TOTAL</b>.</li>
+      <li>TRATO <b>CERCANO Y DIRECTO</b>.</li>
+      <li><b>Supervisión</b> de la obra en todos sus procesos.</li>
+       <li><b>Mejor</b> servicio <b>post venta</b> del sector.</li>
+       <li>Empresa <b>mejor valorada por sus clientes</b>.</li>
+       <li>Exitoso capital Humano.</li>
+       <li>Visita y diagnóstico realizada por <b>profesionales colegiados</b> con la última tecnología en medición.</li> 
+    </ul>
+    <div class="seccion-footer">
+      <div>
+        <p class="estrellas">&#9733&#9733&#9733&#9733&#9733</p>
+      </div>
+      
+    </div>
+  </section>
+  <div class="separador">
+    <div class="separador2"></div>
+  </div>
+
+
+  <section class="garantia">
+    <p class="garantia__titulo1 titulos">Garantía y experiencia</p>
+    <div class='garantia__img'><img src='/images/garantia.jpg' alt=''></div>
+    <div class="garantia__textos">
+      
+      <h4><p class="titulos">Solución definitiva</p></h4>
+      <div class="garantia__text">
+        <p class="parrafo">OK HUMEDADES le dará la solución definitiva a su problema. Nuestros técnicos especializados en la detección, tratamiento y solución de humedades, harán un estudio personalizado de su caso, y le dará la solución para eliminar su problema con garantía. Llámenos sin compromiso y le haremos su diagnóstico totalmente gratuito.</p>
+        <div class="linea"></div>
+      </div>
+    </div>
+    
+  </section>
+  
+  <section class="testimonios">
+    <div class="testimonios__cabecera">
+      <h4 class="titulos">Testimonios</h4>
+      <div>
+        <p class="parrafo">La opinión de nuestros clientes nos posiciona como la empresa mejor valorada de España.</p>
+      </div>
+    </div>  
+    <div class="testimo">
+      <div class="opinion">
+        <div class="opinion_cabecera">
+            <div class="opinion__icono">J</div>
+            <p class="opinion__nombre">Jorge Díaz Largo</p>
+        </div>
+        <b class="estrellas">&#9733&#9733&#9733&#9733&#9733</b>
+        <p class="opinion__texto">Valentín es un profesional excelente. En cuestiones de hogar es fácil encontrarse empresas más "chapuzas". Ok Humedades es la empresa más profesionalizada en este sector que nos hemos encontrado en años. Nos han solucionado un problema de humedad que llevábamos tiempo con él y nadie nos daba la clave.</p>
+      </div>
+      <div class="opinion">
+        <div class="opinion_cabecera">
+          <div class="opinion__icono">C</div> 
+          <p class="opinion__nombre">Carmen Navarro Lado</p>
+        
+        </div>
+        <b class="estrellas">&#9733&#9733&#9733&#9733&#9733</b>
+        <p class="opinion__texto">Muchísimas gracias por vuestro servicio! Serios, puntuales y súper profesionales, nos han solucionado un problema de humedades con el que estábamos desesperados. <br>
+          Te asesoran muy bien y ofrecen un trato excepcional. Agradecer sobre todo a Valentín su paciencia, profesionalidad y trato cercano en todo momento. Lo recomiendo 100% si estáis buscando un servicio rápido y eficiente!</p>
+      </div> 
+    </div>
+    <div class="testimonio__boton">
+      <button class="boton">Ver todos los testimonios</button>
+    </div>
+    <div id="diag-link">
+      <h4 class="titulos">Diagnostica gratis tu humedad <a href="#">aquí</a></h4>
+    </div>
+  </section>
+
+
+  <section class="juridica">
+    <div class="juridica__img">
+      <img src="/images/asesora.webp" alt="">
+    </div>
+    <div class="juridica__textos">
+        <h3 class="titulos">Asesoramiento <b>jurídico</b></h2>
+        <p class="juridica__parrafo">Te ofrecemos <b>Asesoramiento Integral</b> en <b>Vicios Ocultos</b> relacionados con <b>Patologías Estructurales</b></p>
+        <ul >
+          <li>Diagnóstico gratis</li>
+          <li>Financiación gratuita</li>
+          <li>Hasta 30 años de garantía</li>
+        </ul>
+        <div class="llamanos">
+          <div>
+            <p>LLÁMANOS</p>
+            <p>911590325</p> 
+          </div>
+          <i class="fas fa-phone-alt" aria-hidden="true" id="tel-juridico"></i>
+        </div>
+    </div>
+      
+   
+  </section>
+
+  <section class="planeta">
+    <article>
+      <div class="planeta__grilla">
+        <div class="planeta__titulo">
+          <h4 class="titulos">Contribuyendo con el planeta <br><b>y una sociedad más justa</b></h4>
+        </div>
+        <div class="planeta__imagen">
+         
+        </div>
+        <div class="parrafo planeta__text">
+          <p>Somos conscientes que para mejorar la calidad de vida y hacer del futuro un lugar próspero, no basta con protegerte de las humedades, hay que ir más lejos, La calidad del aire, del agua, y la esperanza de nuestros hijos dependen hoy más que nunca de las acciones que tomemos aquí y ahora. 
+          <br>
+          <br>
+          Por ello es que nuestro compromiso con la comunidad es cada día mayor. 
+          <br>
+          <br>
+          Ok humedades ha colaborado con distintas causas que contribuyen a esta misión <br>
+          <br>
+          <a href="#">Asociación HUGO/AME </a> <br>
+          <a href="#">Grupo de personas anónimas </a> 
+        </p>
+      </div>
+    </div>
+    </article>
+  </section>
+
+  <section class="nopermitas">
+    <h3>No permitas que la humedad conviva con tu familia</h3>
+    <h4>Te ofrecemos el DIAGNÓSTICO de manera GRATUITA</h4>
+    <form action="">
+      <input type="text" name="nombre" id="">
+      <input type="tel" name="telefono" id="">
+      <input type="email" name="email" id="">
+      <select name="combo" id="">
+        <option value="">Condensación</option>
+        <option value="">Capilaridad</option>
+        <option value="">Filtración</option>
+        <option value="">Infiltración lateral</option>
+      </select>
+      <button type="submit"></button>
+    </form>
+    <div>
+      <p>Nuestros técnicos visitarán tu domicilio, edificio, piso o local, para realizar un diagnóstico del problema, de manera íntegra y sin compromiso.</p>
+      <ul>
+        <li>Diagnóstico gratis</li>
+        <li>Financiación gratuita</li>
+        <li>Hasta 30 años de garantía</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Llámanos 911590325</h3>
+    </div>
+    <div>
+      <img style="width: 300px;" src="/images/flia2.webp" alt="">
+    </div>
+  </section>
+
+  <section class="preguntas">
+    <h4 class="titulos">Preguntas Frecuentes</h3>
+  
+      <ul class="preguntas__ul">
+        <li class="preguntas__li"><div><a href="">¿El diagnóstico es 100% gratuito?></a><i class="fas fa-plus-circle"></i></div></li>
+        <li class="preguntas__li"><div><a href="">¿El presupuesto es gratuito y sin compromiso?</a><i class="fas fa-plus-circle"></i></div></li>
+        <li class="preguntas__li"><div><a href="">¿Es financiable su servicio?</a><i class="fas fa-plus-circle"></i></div></li>
+        <li class="preguntas__li"><div><a href="">¿Hay garantía en sus soluciones?</a><i class="fas fa-plus-circle"></i></div></li>
+        <li class="preguntas__li"><div><a href="">¿Qué pasa si no quedo satisifech@ con la solución?</a><i class="fas fa-plus-circle"></i></div></li>
+        <li class="preguntas__li"><div><a href="">¿Cómo empezamos?</a><i class="fas fa-plus-circle"></i></div></li>
+      </ul>
+    
+  </section>
+  <section class="profesional">
+    <h3>¿Eres profesional?</h3>
+    <p>Trabaja con nosotros</p>
+    <form action="">
+      <input type="text" name="nombre" id="">
+      <input type="tel" name="telefono" id="">
+      <input type="email" name="email" id="">
+      <input type="file" name="cv" id="">
+      <button type="submit"></button>
+    </form>
+  </section>
+
+  <section class="ultimas">
+    
+    <div class="titulo-linea"><h4 class="titulos">Últimas publicaciones</h4> </div>
+    <div class="ultimas__gal">
+      <div class="ultimas__gal-item"><img src="/images/garantia.jpg" alt=""><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing</a>  </div>
+      <div class="ultimas__gal-item"><img src="/images/familia-okhumedades.png" alt=""><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing</a>  </div>
+      <div class="ultimas__gal-item"><img src="/images/logook.jpg" alt=""><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing</a>  </div>
+      <div class="ultimas__gal-item"><img src="/images/logook.jpg" alt=""><a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing</a>  </div>
+    </div>
+
+  </section>
+  <footer class="my-footer">
+    <div class="my-footer__nosotros">
+      <h5>Nosotros</h5>
+      <p>OK HUMEDADES le dará la solución definitiva a su problema. Nuestros técnicos especializados en la detección, tratamiento y solución de humedades, harán un estudio personalizado de su caso, y le dará la solución para eliminar su problema con garantía.</p>
+    </div>
+    <div class="my-footer__humedadespor">
+        <h5>Humedades por:</h5>
+        <p>Condensación</p>
+        <p>Capilaridad</p>
+        <p>Filtración</p>
+        <p>Terrazas</p>
+    </div>
+    <div class="footer-servicios">
+      <h5>Servicios</h5>
+      <p>Diagnóstico gratuito</p>
+      <p>Financiación a medida</p>
+      <p>Garantía hasta 30 años</p>
+      <p>Profesionales colegiados</p>
+    </div>
+    <div class="footer-contacto">
+      <h5>Contacto</h5>
+      <p><a href="mailto:info@okhumedades.com"><i class="fas fa-envelope"></i> info@okhumedades.com</a></p>
+      <p><a href=""><i class="fas fa-globe-europe"></i> www.okhumedades.com</a></p>
+      <p><a href=""><i class="fas fa-map-marker-alt"></i> Paseo de la Castellana 91, 28046, Madrid</a></p>
+      <p><a href=""><i class="fas fa-mobile-alt"></i> Teléfono: +911590325</a></p>
+      <div class="footer-redes">
+        <a href="https://www.instagram.com" target="_blanck"><i class="fab fa-instagram-square"></a></i> 
+        <a href="" target="_blanck"><i class="fab fa-facebook-square"></a></i>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

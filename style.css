@@ -1,0 +1,1044 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+root {
+    --amarillo:rgb(255, 204, 74);
+
+}
+
+body {
+    /* display: grid; */
+    max-width:2000px;
+    
+    margin-left:auto ;
+    margin-right:auto;
+    background-color: rgb(246, 246, 246)
+}
+
+.titulos {
+    font-weight: bold;
+    font-size: 2.2em;
+    text-align: center;
+   
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+/* Barra superior */
+.barra-sup {
+    display: flex;
+    justify-content: right;
+    height: 25px;
+    width: 100%;
+    background-color: rgb(255, 204, 74);
+    align-items: center;
+
+}
+
+.barra-sup__logo{
+    flex: 1 0 50px;
+}
+
+.barra-sup__tel {
+    /* min-width: 227px; */
+    align-items: center;
+    text-align: center;
+    /* padding-left: 10px; */
+    flex: 2;
+    color: rgb(86, 150, 86)
+}
+
+.barra-sup__tel a p {
+    display: table-cell;
+    vertical-align:baseline;
+    font-size: 1em;
+}
+
+.barra-sup__tel a:link {
+    color: rgb(86, 150, 86)
+}
+
+.barra-sup__tel a:visited {
+    color: rgb(86, 150, 86)
+}
+.barra-sup__tel a:hover {
+    color: rgb(130, 151, 102)
+}
+
+.barra-sup__iconos {
+    flex: 1;
+    text-align: center;
+}
+.barra-sup__iconos a {
+    color: rgb(86, 150, 86);
+    
+}
+
+.barra-sup__iconos a i {
+    font-size: 1em;
+    padding-right: 1px;
+}
+
+/* End barra sup */
+
+/* BARRA DE BS */
+.navbar {
+    background-color: rgb(86, 150, 86) !important;
+    /* height: 25px; */
+}
+
+.container-fluid {
+    /* height: 65px; */
+   
+}
+
+.navbar-brand img {
+    height: 108px;
+    position: absolute;
+    top:-25px;
+    left:10px
+}
+
+.nav-link {
+    color: #fff !important;
+    /* font-size: 1.5em; */
+}
+
+.nav-item {
+   
+}
+
+#diag-boton {
+    margin: 0;
+    padding: 0;
+    border-radius: 60px;
+}
+/* END BARRA BS */
+
+/* PRIMER CARATULA */
+
+
+.portada {
+    height: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    /* grid-template-rows: repeat(2,fr); */
+    grid-template: 
+    "formulario" 1fr 
+    "imagen" 1fr ;
+
+    align-items:center;
+    background: linear-gradient(#445944, #6bbb6b);
+    /* padding: 0em .5em; */
+    overflow: hidden;
+    padding: 1em;
+    
+}
+
+/* Portada texto */
+.portada__text {
+    grid-area: formulario;
+    display: grid;
+    overflow: visible;
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    color: #fff;
+    flex: 1 ;
+    /* padding: 20px 0; */
+    min-width: 250px;
+    z-index: 30;
+}
+
+.portada__text p{
+    margin: 0;
+}
+.portada__text_div1 p b {
+    color:  rgb(255, 204, 74);
+}
+.portada__text_div1:first-child{
+    font-size:1.2em;
+    font-weight: 600;
+}
+.portada__text_div1_p2{
+    font-size:1.35em;
+}
+.linea {
+    border-top: 2px solid  rgb(255, 204, 74);
+    height: 2px;
+    max-width: 260px;
+    padding: 5px 0;
+    margin: auto;
+}
+
+.portada__text_div2 p b {
+    color: rgb(112, 198, 112);
+}
+.portada__text_div2 p:nth-child(1){
+    font-size: 1.2em;
+}
+.portada__text_div2 p:nth-child(2){
+    font-size: .6em;
+}
+.portada__text_div2 p:nth-child(3){
+    font-size: .6em;
+}
+.boton {
+   
+    border:none;
+    
+    background-color:rgb(67, 86, 67);   
+    color:#fff;
+    border-radius: 3px;
+    align-content: space-between;
+    padding: .3em .5em;
+}
+
+.diagnosticar-btn {
+    display: flex;
+    padding: 1em;   
+}
+
+.boton:hover {
+    background-color:rgb(74, 128, 74);  ;
+}
+
+.diagnosticar-btn a{
+    margin: auto;
+}
+
+.formulario{
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 250px;
+    
+}
+.formulario div{
+    
+    border-radius: 5px;
+    background-color: rgb(255, 204, 74);
+    padding: 10px;
+}
+.formulario div form{
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    gap: 10px;
+}
+
+.input_form{
+    /* width: 100%; */
+    flex: 1 0 200px;
+    border:none;
+}
+.option_sel {
+    color:#000;
+}
+
+
+.portada__img {
+    grid-area: imagen;
+    background-color: rgb(255, 204, 74);
+    padding: 1.5em;
+    /* flex:2 0 250px; */
+    border-radius: 100%;
+    /* clip-path: circle(50% at 50% 50%); */
+
+    
+    transform: translate(0,-10px) scale(1.8);
+    z-index: 10;
+}
+
+.portada__img img {
+    width: 100%;
+
+     object-fit:fill;
+    border-radius: 100em;
+    /* clip-path: circle(50% at 50% 50%); */
+}
+
+/* END PORTADA */
+
+/* SECCION TARJETAS */
+
+.tarjetas {
+    padding:  2em 2em;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient( #6bbb6b,#445944);
+}
+
+.tarjetas h2 {
+    font-size: 2.2em;
+}
+.tarjetas h2 b {
+    font-size: 1.1em;
+}
+
+.card {
+    /* margin: 1em; */
+    /* padding: 1em; */
+    border-radius: 10px;
+    
+}
+.card img{
+    border-radius: 10px;
+}
+
+.card-img-top {
+    padding: 1em 2em;
+    border-radius:40px !important;
+
+}
+
+.card-img-top img {
+   
+}
+
+
+
+
+/* SECCION VENTAJAS */
+
+.ventajas {
+   
+    background: linear-gradient(#445944, #6bbb6b);
+    /* -moz-border-radius: 95px 15px 15px 15px;
+    -webkit-border-radius: 0px 0px 200px 200px; */
+}
+.ventajas h2 {
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.ventajas .titulos {
+    color:rgb(255, 204, 74);
+    margin-bottom: 0;
+}
+.ventajas .titulos b {
+    color:#fff;
+}
+
+.ventajas ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    color: #fff;
+    font-size: 1.1em;
+    max-width:1300px ;
+    margin: auto;
+}
+
+.ventajas ul li{
+    padding-bottom: .8em;
+    flex-basis: 500px;
+    
+}
+
+.ventajas ul li::before {
+    content: "\f00c "; /* FontAwesome Unicode */
+    padding-right: .8em;
+    font-family: FontAwesome;
+    color: rgb(255, 204, 74);
+    font-size: 1.2em;
+}
+.ventajas .estrellas {
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.separador{
+    padding: 0;
+    margin: 0;
+    background-color:#93bb93;
+    height: 130px;
+    clip-path: ellipse(55% 80% at 50% 2%);
+  
+}
+.separador2 {
+
+    padding: 0;
+    margin: 0;
+    background-color: rgba(107,187,107,1);
+    height: 160px;
+    clip-path: ellipse(60% 130% at 50% -70%);
+    
+}
+
+/* .ventajas .seccion-footer div {
+    background: linear-gradient(#6bbb6b,#445944);
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30% ;
+    min-height: 8em;
+} */
+
+/*     
+    display: inline-block;
+    
+    width: 1.3em;
+     */
+}
+
+/* SECCION PLANETA */
+.planeta article img {
+    width: 20%;
+}
+
+.estrellas {
+    color: rgb(255, 204, 74);
+}
+
+/* SECCION GARANTIA */
+
+.garantia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 3em 0;
+    background-color: rgb(246, 246, 246);
+    
+}
+
+/* .garantia__img {
+    display: none;
+} */
+
+.garantia__text {
+    max-width: 400px;
+}
+
+/* .garantia__titulo1::after {
+    content: url(/images/garantia.jpg) ;
+    display: block;
+} */
+
+
+.parrafo {
+    font-size: 1.2em;
+    margin: 0;
+    margin-left: 3em;
+   
+    text-align:left;
+    
+}
+.garantia .linea {
+    margin: 0;
+    border-top: #bbb solid 4px;
+    max-width: 100%;
+    margin-top: 1em;
+    margin-left: 3em;
+   
+}
+
+
+/* SECCION TESTIMONIO */
+.testimonios {
+    padding:2em 0 0 0;
+    
+}
+.testimonios__cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+.testimonios__cabecera div p{
+    border-left: rgba(68,89,68,1) solid 3px;
+    padding-left: 1em;
+}
+
+.testimonios .titulos {
+    color: rgba(107,187,107,1);
+    font-size: 3em;
+    font-weight: bold;
+}
+.testimo {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    /* width: 25em; */
+    max-width: 1000px;
+    gap: 2em;
+}
+.opinion {
+    margin:1em;
+    padding:1em;
+    background-color: #efefef;
+    border-radius: 8px; 
+    width: 25em;
+    margin: auto;
+}
+
+.opinion .estrellas {
+    font-size: 2em;
+}
+
+.opinion_cabecera {
+    display: table-row;
+}
+
+.opinion__icono {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    background-color: #ef6c00;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.opinion__nombre {
+   display: table-cell;
+   vertical-align: middle;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 1em;
+}
+
+.opinion__texto {
+    max-height: 7em;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 1em;
+}
+
+.testimonio__boton {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.testimonio__boton button {
+    margin: 2em;   
+    width: 25em; 
+}
+
+#diag-link {
+    background: radial-gradient(circle, rgba(107,187,107,1) 0%, rgba(68,89,68,1) 90%, rgba(68,89,68,1) 100%) ;
+    padding: 2em 0;
+    
+}
+
+#diag-link h4 {
+    font-size: 3em;
+    color: #fff;
+}
+ 
+#diag-link a {
+    color: rgb(255, 204, 74);
+   
+}
+
+/* SECCION JURIDICA  */
+.juridica {
+    overflow: hidden;
+    background-color: rgb(112, 198, 112);
+    color: #fff;
+    padding: 2em;
+    padding-bottom:2em;
+    
+}
+
+.juridica .titulos {
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+}
+
+
+.juridica .titulos b {
+    color: rgb(255, 204, 74);
+    padding: 0;
+    
+}
+
+.juridica img {
+    padding: 20px;
+    border-radius: 50%;
+    width: 100%;   
+      
+}
+.juridica__img {
+    max-width: 500px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    transform: translate(0, -120px) scale(1.5);
+} 
+
+.juridica__parrafo {
+    
+    text-align: right;
+    margin-top: 2em;
+}
+
+.juridica ul {
+    list-style: none;
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+}
+
+.juridica ul li{
+    text-align: right;
+    padding-bottom: 0em;
+}
+
+.juridica ul li::after {
+    content: "\f00c "; /* FontAwesome Unicode */
+   
+    font-family: FontAwesome;
+    color: rgb(255, 204, 74);
+    font-size: 1.2em;
+}
+.juridica .llamanos{
+    /* max-width:600px; */
+    display: flex;
+    gap: .2em;
+    justify-content: space-around;
+}
+.juridica .llamanos  p {
+   
+    font-size:2.5em;
+    font-style: bold;
+    line-height:90%;
+    /* max-width: 300px; */
+}
+.juridica .llamanos i {
+    justify-items: right;
+    font-size: 5em;
+    color: rgb(255, 204, 74);
+}
+
+/* SECCION PLANETA */
+
+.planeta {
+    padding: 2em;
+    background-image: url(/images/mano.jpg);
+    background-position: -300px bottom;
+    background-repeat: no-repeat;
+    background-size:cover;
+   
+   background-color: #e6e5e1 ;
+}
+.planeta a {
+    font-weight: bold;
+    color:rgb(67, 86, 67)
+    
+}
+
+.planeta a:hover {
+    color:rgb(86, 150, 86)
+}
+.planeta__grilla{
+    display: grid;
+    grid-template:
+    "titulo titulo" 150px
+    "imagen  texto" auto /
+    1fr 1fr ;
+}
+.planeta__titulo{
+    grid-area: titulo;
+}
+.planeta .titulos {
+    font-size: 2em;
+    text-align: right;
+    text-shadow: 0px 0px 2px rgb(14, 14, 14);
+}
+.planeta .titulos b {
+    color: rgba(107,187,107,1)
+}
+
+.planeta__text {
+    grid-area: texto;
+    /* padding-top: 15em; */
+    text-align: right;
+    margin: 0;
+    min-width: 200px;
+    text-shadow: snow 1px 1px;
+}
+
+
+/* END SECCION PLANETA */
+
+/*  SECCION NO PERMITAS */
+.nopermitas {
+    display: none;
+}
+
+/* END SECCION NO PERMITAS */
+
+/* SECCION PREGUNTAS FRECUENTAS */
+.preguntas{
+    padding: 30px 0;
+    background: linear-gradient(rgba(239,239,239,1),#fff);
+}
+.preguntas .titulos{
+
+    color: rgb(67, 86, 67);
+    font-size: 3em;
+}
+.preguntas__ul {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 950px;
+    margin: auto;
+}
+
+.preguntas__li {
+    color: #fff;
+    background-color: rgb(67, 86, 67);
+    padding: 8px 8px;
+    margin: 8px;
+    border-radius: 8px;
+    border-bottom: rgba(107,187,107,1) solid 5px ;
+    flex: 1;
+    min-width: 300px;
+    /* font-size: .7em; */
+    
+}
+
+
+.preguntas__li i {
+    content: "\f055";
+    font-family: FontAwesome;
+    color: rgba(107,187,107,1);
+    font-size: 1.7em;
+    float: right;
+}
+
+.preguntas__li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: .7em
+}
+
+.preguntas__li:hover{
+    border-bottom: rgb(255, 204, 74) solid 5px;
+}
+
+.preguntas__li a:hover {
+    color: rgb(255, 204, 74);
+}
+
+
+
+/* END PREGUNTAS FRECUENTES */
+
+/* SECCION PROFESIONAL */
+.profesional {
+    display: none;
+}
+/* END PROFESIONAL */
+
+/* SECCION ULTIMAS */
+.ultimas {
+    background-color: rgba(68,89,68,1);
+}
+
+.ultimas .titulos {
+    color: rgb(255, 204, 74);
+    padding-top: 1em;
+    text-align: right;
+}
+.ultimas__gal {
+    padding: 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    
+}
+.ultimas__gal-item {
+    display: flex;
+    color: #fff;
+    font-size: 1em;
+    max-width: 200px;
+    margin: auto;
+    flex-direction: column;
+    padding:1em;
+}
+
+.ultimas__gal-item img {
+    /* width: 100px;
+    height: 100px; */
+    object-fit: cover;
+    border-radius: 8px;
+  
+}
+
+.ultimas__gal-item a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.ultimas__gal-item a:hover {
+    color: rgb(255, 204, 74);
+    
+}
+
+.titulo-linea {
+    padding:0;
+    margin: 0;
+    margin-right: 2em;
+    border-bottom: #fff solid 5px;
+
+}
+
+/* END ULTIMAS */
+
+/* SECCION FOOTER */
+.my-footer {
+    display:flex;
+    
+    justify-content:space-around;
+    background-color: #252525;
+    color: #fff;
+    padding: 1em 1em;
+    font-size: .8em;
+    /* gap: 4em; */
+   
+}
+
+.footer-servicios, .footer-contacto {
+    margin-left: auto;
+    margin-right: auto;
+    display: table-cell;
+    vertical-align:text-bottom;
+}
+.footer-contacto i {
+    color: #217f57;
+}
+.my-footer a {
+    color: #fff;
+}
+.my-footer a:hover {
+    color: rgb(255, 204, 74);
+}
+ .my-footer h5 {
+     color:#217f57;
+    font-size: 1.5em;
+}
+
+.footer-redes {
+    font-size: 3em;
+
+}
+
+.footer-redes i:hover {
+    color: rgb(255, 204, 74);
+}
+
+.footer-contacto {
+    order: 1;
+}
+
+.my-footer__nosotros{
+    display: none;
+}
+.my-footer__humedadespor {
+    display: none;
+}
+.footer-servicios {
+    order: 2;
+    /* display: none; */
+}
+
+
+
+/* MEDIA QUERIES */
+/*Escritorio*/
+@media (min-width: 1199.98px)  {
+  /* portada */
+    .portada {
+        grid-template: 
+        "formulario imagen" 100vh /
+        1fr 2fr;
+    }
+    .portada__img {
+        transform: translate(10px) scale(1);
+    }
+    .portada__img img {
+        transform: scale(.96);
+    }
+    .formulario div form {
+       display: flex;
+    }
+    .portada__text_div1 {
+        transform: scale(1.5);
+    }
+    .portada__text_div2 {
+        padding-top: 10px;
+        transform: scale(1.3);
+    }
+    /* fin portada */
+
+    /* garantia */
+
+    .garantia {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-bottom: 4em;
+    }
+    .garantia__titulo1 {
+        width: 100%;
+        font-size: 5em;
+        padding-bottom: .5em;
+    }
+    .garantia__img {
+        transform: scale(1.2);
+    }
+
+    /* juridica */
+    .juridica {
+        display: flex;
+        padding-bottom: 0;
+        justify-content:space-evenly;
+
+    }
+    .juridica__img {
+        transform: scale(1.5) translate(-150px) ;
+        max-width: 800px;
+        padding: 30px;
+    }
+
+    .juridica__textos {
+     
+        padding-right: 4%;
+       
+    }
+    .juridica__textos .titulos {
+        font-size: 4em;
+        
+    }
+
+    .juridica__parrafo {
+        font-size: 1.3em;
+    }
+    .juridica__textos ul li{
+        text-align: right;
+        font-size: 1.4em;
+    }
+    .juridica .llamanos {
+        text-align: right;
+        
+        justify-content: right; 
+    }
+
+    /* planeta */
+
+    .planeta {
+        min-height: 800px;
+        background-position: 0 center;
+    }
+    .planeta__titulo {
+        font-size:2em;
+    }
+    .planeta__text {
+        font-size: 1.3em;
+    }
+
+    /* preguntas */
+    .preguntas__li a {
+        
+        font-size: 1em
+    }
+
+    /* footer */
+    .my-footer__nosotros p{
+    
+        font-size: 1.5em;
+    }
+    
+    .my-footer__nosotros {
+        display: inline;
+        flex-basis: 700px;
+        min-width: 400px;
+    }
+    .my-footer__humedadespor {
+        display: inline;
+    }
+    .footer-contacto {
+        order:3;
+    }
+    .my-footer {
+        padding: 2em;
+        gap: 3em;
+    }
+}        
+
+
+/*Fin Escritorio*/
+
+/*Tablet*/
+/*Portrait*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    .portada__img {
+        transform: scale(1.4);
+    }
+    .portada__img img {
+        transform: scale(.96);
+    }
+    
+}
+
+/*landscape*/
+@media (min0-width: 991.98px) and (max-width: 1199.98px)and (orientation:landscape) {  
+      
+}
+/*fin tablet*/
+
+/*movil*/
+/*Portrait*/
+/*Default*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    /* nav */
+    #diag-boton {
+        margin: 0;
+        padding-left: 6px;
+        border-radius: 5px;
+        max-width:160px;
+    }
+
+    /* planeta */
+    .planeta .titulos {
+        font-size: 1.8em;
+    }
+
+    /* preguntas */
+    .preguntas__li {
+        min-width: 200px;    
+    }
+    
+    /*  */
+ }
+/*landscape*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:landscape) {
+    .portada__img {
+        transform: scale(1.4);
+    }
+    .portada__img img {
+        transform: scale(.96);
+    }
+}
+/*fin movil*/
