@@ -767,25 +767,27 @@ h1 {
     padding: 0 ;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: .5em;
     
 }
 .ultimas__gal-item {
-    display: flex;
+    display: table;
     color: #fff;
     font-size: 1em;
+    text-align: center;
+    vertical-align: top;
     max-width: 200px;
-    margin: auto;
-    flex-direction: column;
+    margin: 0 auto;
+    /* flex-direction: column; */
     padding:1em;
 }
 
 .ultimas__gal-item img {
-    /* width: 100px;
-    height: 100px; */
+    width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 8px;
-  
 }
 
 .ultimas__gal-item a {
