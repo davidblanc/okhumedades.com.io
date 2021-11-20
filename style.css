@@ -641,7 +641,7 @@ h1 {
 
 .planeta {
     padding: 2em;
-    background-image: url(/images/mano.jpg);
+    background-image: url(images/mano.jpg);
     background-position: -300px bottom;
     background-repeat: no-repeat;
     background-size:cover;
