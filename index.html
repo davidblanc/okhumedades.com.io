@@ -27,18 +27,18 @@
           <img src="" alt="">
         </div>
         <div class="barra-sup__tel">
-          <a  href="https://web.whatsapp.com"><p><i class="fas fa-phone-alt"></i>911590325</p></a>
+          <a  href="tel:911590325"><p><i class="fas fa-phone-alt"></i>911590325</p></a>
         </div>
         <div class="barra-sup__iconos">
-          <a  href="www.instagram.com"><i class="fab fa-instagram-square"></i></a>
-          <a  href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a>
+          <a  href="https://www.instagram.com/ok.humedades/"><i class="fab fa-instagram-square"></i></a>
+          <a  href="https://www.facebook.com/okhumedades"><i class="fab fa-facebook-square"></i></a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <!-- Logo -->
           <a class="navbar-brand" href="#">
-              <img src="images/logo-header.svg" alt="Ok Humedades" width="" height="" class="d-inline-block align-text-top">
+              <img src="images/logo-header.svg" alt="Logo de OK Humedades" width="" height="" class="d-inline-block align-text-top">
           </a>
           <!-- Botón toogle -->
           <div>
@@ -50,7 +50,7 @@
           <!-- Menú -->
           <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:600px;">
-              <li class="nav-item">
+              <li class="nav-item" style="visibility: hidden;">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item dropdown">
@@ -64,17 +64,30 @@
                     <li><a class="dropdown-item" href="#">Infiltración lateral</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Salud y Humedades</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Consecuencias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="#">Humedades en casa</a></li>
+                    <li><a class="dropdown-item" href="#">Moho en paredes</a></li>
+                    <li><a class="dropdown-item" href="#">Salud y humedad</a></li>
+                </ul>
               </li>
               <li class="nav-item boton"  id="diag-boton">
                 <a class="nav-link" href="#">Diagnosticar gratis</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
+                <a class="nav-link" href="https://okhumedades.com/consejos-tratamiento-de-humedades/">Blog</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" id="boton-contacto">
                 <a class="nav-link" href="#">Contacto</a>
+                <div class="contacto-nav">
+                  <p><a href="mailto:info@okhumedades.com"><i class="fas fa-envelope"></i> info@okhumedades.com</a></p>
+                  <p><a href=""><i class="fas fa-globe-europe"></i> www.okhumedades.com</a></p>
+                  <p><a href=""><i class="fas fa-map-marker-alt"></i> Paseo de la Castellana 91, 28046, Madrid</a></p>
+                  <p><a href=""><i class="fas fa-mobile-alt"></i> Teléfono: +911590325</a></p>
+                </div>
               </li>
             </ul>
           </div>
@@ -254,13 +267,15 @@
           <li>Financiación gratuita</li>
           <li>Hasta 30 años de garantía</li>
         </ul>
-        <div class="llamanos">
-          <div>
-            <p>LLÁMANOS</p>
-            <p>911590325</p> 
+        <a href="tel:911590325" class="llama-link">
+          <div class="llamanos">
+            <div>
+              <p>LLÁMANOS</p>
+              <p>911590325</p> 
+            </div>
+            <i class="fas fa-phone-alt" aria-hidden="true" id="tel-juridico"></i>
           </div>
-          <i class="fas fa-phone-alt" aria-hidden="true" id="tel-juridico"></i>
-        </div>
+        </a>
     </div>
       
    
@@ -401,8 +416,8 @@
       <p><a href=""><i class="fas fa-map-marker-alt"></i> Paseo de la Castellana 91, 28046, Madrid</a></p>
       <p><a href=""><i class="fas fa-mobile-alt"></i> Teléfono: +911590325</a></p>
       <div class="footer-redes">
-        <a href="https://www.instagram.com" target="_blanck"><i class="fab fa-instagram-square"></a></i> 
-        <a href="" target="_blanck"><i class="fab fa-facebook-square"></a></i>
+        <a href="https://www.instagram.com/ok.humedades/" target="_blanck"><i class="fab fa-instagram-square"></a></i> 
+        <a href="https://www.facebook.com/okhumedades" target="_blanck"><i class="fab fa-facebook-square"></a></i>
       </div>
     </div>
   </footer>
