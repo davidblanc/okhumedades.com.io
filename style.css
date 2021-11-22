@@ -306,6 +306,7 @@ h1 {
 
 .tarjetas h2 {
     font-size: 2.2em;
+    padding-bottom: 1em;
 }
 .tarjetas h2 b {
     font-size: 1.1em;
@@ -332,9 +333,14 @@ h1 {
     font-weight: bold;
     color:#444;
 }
+
+.card-text {
+    font-weight: 200;
+}
 .card-text a {
     color:#ef6c00
 }
+
 
 
 
@@ -452,6 +458,10 @@ h1 {
     max-width: 400px;
 }
 
+.garantia__text p {
+    font-weight: 200;
+}
+
 /* .garantia__titulo1::after {
     content: url(/images/garantia.jpg) ;
     display: block;
@@ -486,6 +496,14 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 2em;
+    padding: 2em;
+   
+    
+}
+
+.testimonios__cabecera div{
+   margin: auto;
+   
 }
 .testimonios__cabecera div p{
     border-left: rgba(68,89,68,1) solid 3px;
@@ -1009,6 +1027,13 @@ h1 {
         transform: scale(1.2);
     }
 
+    /* testimonios */
+    .testimonios__cabecera div {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+
+    /* end testimonios */
     /* juridica */
     .juridica {
         display: flex;
@@ -1057,6 +1082,8 @@ h1 {
     .planeta__text {
         font-size: 1.3em;
     }
+
+
 
     /* preguntas */
     .preguntas__li .preguntas-pregunta  {
