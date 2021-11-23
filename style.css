@@ -148,7 +148,7 @@ a:link {
 /* END BARRA BS */
 
 /* PRIMER CARATULA */
-h1 {
+.portada h1 {
     font-size: 1em;
 }
 
@@ -945,7 +945,45 @@ h1 {
     /* display: none; */
 }
 
-
+/* ARTICULOS */
+.articulo-okh {
+    margin: 0 auto;
+    max-width: 1040px;
+    width: 100%;
+}
+.articulo-okh h1 {
+    font-size: 2.8em;
+    text-align: center;
+}
+.articulo-okh h1,h2 {
+    
+    padding: 1em 0 1em 0;
+}
+.articulo-okh h3 {
+    padding: 1em 0 0 0;
+}
+.art-img {
+    display: flex;
+    max-width: 1024px;
+    padding: 1em;
+    margin: auto;
+}
+.articulo-okh img {
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+.articulo-okh-tag {
+    /* padding:2em .3em 2em .3em; */
+    /* display: flex;
+    margin: auto; */
+    /* background-color: #f1d9d9; */
+    /* align-items: center;
+    max-width: 1200px; */
+    color: #545565;
+    font-size: 1.3em;
+    font-weight: 200;
+}
 
 /* MEDIA QUERIES */
 /*Escritorio*/
