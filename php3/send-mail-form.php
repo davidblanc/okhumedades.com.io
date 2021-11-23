@@ -21,7 +21,7 @@ if( !empty($name) && !empty($phone)) {
 	}
 
 	// Email will be send
-	$to =  "davidblanc@gmail.com"; //"nandogomezm@gmail.com"; // Change with your email address
+	$to =  "nandogomez@gmail.com"; //"nandogomezm@gmail.com"; // Change with your email address
 	$sub = "Okhumedades - Contacto Home"; // You can define email subject
 	// HTML Elements for Email Body
 	$body = <<<EOD
@@ -31,7 +31,7 @@ if( !empty($name) && !empty($phone)) {
 	<strong>Comentario:</strong> $message <br>
 EOD;
 //Must end on first column
-	$email2 = "davidblanc@aybsoft.com";
+	$email2 = "hola@okhumedades.com";
 	$headers = "From: $name <$email2>\r\n";
 	//$headers .= "Bcc: $email2\r\n";
 	$headers .= 'MIME-Version: 1.0' . "\r\n";
@@ -41,7 +41,8 @@ EOD;
 	mail($to, $sub, $body, $headers);
 	
 	$data = array("result" => "success", "msg" => "Tu mensaje fue enviado.");
-	header('Content-Type: application/json');
+	//header('Content-Type: application/json');
+	header("Location: https://okhumedades.com");
 	echo json_encode($data);exit;
 	
 } else {
