@@ -1,7 +1,5 @@
 <?php
 
-
-
 // Variables
 $name = trim($_POST['FULL_NAME']);
 $email = trim($_POST['EMAIL']);
@@ -23,7 +21,7 @@ if( !empty($name) && !empty($phone)) {
 	}
 
 	// Email will be send
-	$to =  "nandogomezm@gmail.com"; //"nandogomezm@gmail.com"; // Change with your email address
+	$to =  "davidblanc@gmail.com"; //"nandogomezm@gmail.com"; // Change with your email address
 	$sub = "Okhumedades - Contacto Home"; // You can define email subject
 	// HTML Elements for Email Body
 	$body = <<<EOD
@@ -33,7 +31,7 @@ if( !empty($name) && !empty($phone)) {
 	<strong>Comentario:</strong> $message <br>
 EOD;
 //Must end on first column
-	$email2 = "hola@okhumedades.com";
+	$email2 = "davidblanc@aybsoft.com";
 	$headers = "From: $name <$email2>\r\n";
 	//$headers .= "Bcc: $email2\r\n";
 	$headers .= 'MIME-Version: 1.0' . "\r\n";
