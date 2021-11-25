@@ -24,7 +24,6 @@ body {
     font-weight: bold;
     font-size: 2.2em;
     text-align: center;
-   
 }
 
 
@@ -146,6 +145,68 @@ a:link {
     border-radius: 60px;
 }
 /* END BARRA BS */
+
+/* Popup Modal */
+.modal-contenido{
+    background-color:rgb(255, 204, 74);
+    max-width: 250px;
+    padding: 10px 10px 20px 10px;
+    margin: 10% auto;
+    position: relative;
+    border-radius: 4px;
+}
+
+.modal-show {
+    z-index: 100000;
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    transition: all 1s;
+    opacity:1;
+    pointer-events:auto;
+}
+
+.modal-okh{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;  
+    right:0;
+    bottom:0;
+    left:0;
+    transition: all 1s;
+    opacity:0;
+    pointer-events:none;  
+} 
+
+#miModal:target{
+    opacity:0;
+    pointer-events:none;  
+}
+
+.modal-cabecera {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+.modal-titulo {
+    font-size: 2em;
+    margin: auto;
+}
+.modal-cerrar a {
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(67, 86, 67);
+    top: -15px;
+}
+.input_form-pop {
+    width: 100%;
+}
+/* end popud modal */
+
 
 /* PRIMER CARATULA */
 .portada h1 {
@@ -1155,8 +1216,22 @@ a:link {
         padding: 2em;
         gap: 3em;
     }
+    /* modal */
+    .modal-contenido{
+        background-color:rgb(255, 204, 74);
+        max-width: 500px;
+        padding: 20px 20px 30px 20px;
+        margin: 10% auto;
+        position: relative;
+        border-radius: 4px;
+    }
+    .form-pop {
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+    }
+/* fin modal */
 }        
-
 
 /*Fin Escritorio*/
 

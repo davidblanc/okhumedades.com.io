@@ -46,7 +46,7 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPMTH7B"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-   <header>
+  <header>
     <div class="barra-sup">
         <div class="barra-sup__logo">
           <img src="" alt="">
@@ -117,6 +117,8 @@
           </div>
         </div>
     </nav>
+
+
     <div class="portada">
         <div class="portada__text">
             <div class="portada__text_div1" >
@@ -124,7 +126,7 @@
                 <p class="">La mejor <b>empresa de humedades</b></p>
                 <p class="portada__text_div1_p2">de Madrid <b class="estrellas">&#9733&#9733&#9733&#9733&#9733</b></p>
               </h1>
-                 <div class="linea"></div>
+                <div class="linea"></div>
             </div>
             <div class="portada__text_div2">
               <p class=""><b>Apasionados del</b> buen servicio</p>
@@ -157,6 +159,33 @@
           <img src="images/familia-okhumedades.webp" width="280px" height="187px" alt="Familia feliz" class="flia">
         </div>
         
+  </div>
+
+  <!-- Modal pop-up -->
+  <div id="miModal" class="modal-okh">
+    <div class="modal-contenido">
+      <div class="modal-cabecera">
+        <div class="modal-titulo"><span>¿Hablamos?</span></div>
+        <div class="modal-cerrar"><a href="#miModal">&times;</a></div>
+      </div>
+      <div class="formulario-pop">
+        <div>
+          <form action="php3/send-mail-form.php" accept-charset="UTF-8" enctype="multipart/form-data" method="POST" class="form-pop">
+            <input require class="input_form-pop text-input" type="text" value name="FULL_NAME" placeholder="Nombre" id="mce-FULL_NAME">   
+            <input require class="input_form-pop requiered phone text-input" type="tel" name="PHONE" placeholder="Teléfono/móvil" value id="mce-PHONE">
+            <input class="input_form-pop text-input" type="email" value name="EMAIL" placeholder="Email" id="mce-EMAIL">
+            <select class="input_form-pop  text-input" value name="COMMENT"  id="">
+              <option class="option_sel-pop" selected="true" value="Tipo de humedad" disabled="disabled" >Tipo de Humedad</option>
+              <option class="option_sel-pop" value="Condensación">Condensación</option>
+              <option class="option_sel-pop" value="Capilaridad">Capilaridad</option>
+              <option class="option_sel-pop" value="Filtración">Filtración</option>
+              <option class="option_sel-pop" value="Infiltración lateral">Infiltración lateral</option>
+            </select>
+            <button class="boton input_form-pop" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>  
   </div>
   </header>
   <!-- Seccion primera -->
@@ -445,6 +474,19 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript">
 
+    $(document).ready(function() {
+      setTimeout(function() {
+        const ventana = document.querySelector("#miModal");
+        if (!window.sessionStorage.getItem("mostrarModal")) {
+          window.sessionStorage.setItem("mostrarModal", "no");
+          ventana.classList.remove("modal-okh");
+          ventana.classList.add("modal-show");
+        }
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
