@@ -162,11 +162,11 @@
   </div>
 
   <!-- Modal pop-up -->
-  <div id="miModal" class="modal-okh">
+  <div id="pop-okhumedades" class="modal-okh">
     <div class="modal-contenido">
       <div class="modal-cabecera">
         <div class="modal-titulo"><span>¿Hablamos?</span></div>
-        <div class="modal-cerrar"><a href="#miModal">&times;</a></div>
+        <div class="modal-cerrar"><a href="#pop-okhumedades">&times;</a></div>
       </div>
       <div class="formulario-pop">
         <div>
@@ -480,13 +480,13 @@
 
     $(document).ready(function() {
       setTimeout(function() {
-        const ventana = document.querySelector("#miModal");
+        const ventana = document.querySelector("#pop-okhumedades");
         if (!window.sessionStorage.getItem("mostrarModal")) {
           window.sessionStorage.setItem("mostrarModal", "no");
           ventana.classList.remove("modal-okh");
           ventana.classList.add("modal-show");
         }
-      }, 2000);
+      }, 6000);
     });
   </script>
 </body>

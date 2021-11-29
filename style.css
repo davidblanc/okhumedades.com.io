@@ -181,7 +181,7 @@ a:link {
     pointer-events:none;  
 } 
 
-#miModal:target{
+#pop-okhumedades:target{
     opacity:0;
     pointer-events:none;  
 }
