@@ -5,7 +5,9 @@
     padding: 0;
     transition: all .5s;
 }
-
+a:hover {
+    color:white;
+}
 root {
     --amarillo:rgb(255, 204, 74);
 
