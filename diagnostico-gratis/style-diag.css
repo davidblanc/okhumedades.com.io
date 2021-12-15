@@ -1,4 +1,5 @@
 
+
 .stepper{
     margin-bottom: 2rem;
 }
@@ -115,6 +116,7 @@ stepper .nav-tabs>li:first-of-type.active:after {
     padding:2em;
     max-width: 500px;
     margin: auto;
+    height: 100%;
 }
 
 .tarj-diag p {
@@ -129,6 +131,9 @@ stepper .nav-tabs>li:first-of-type.active:after {
 }
 .tarj-fondo {
     background-image: url("/diagnostico-gratis/images/fondo-diagnostico.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+   
 }
 .formulario div form {
     display:grid;

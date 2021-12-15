@@ -42,7 +42,7 @@ EOD;
 	
 	$data = array("result" => "success", "msg" => "Tu mensaje fue enviado.");
 	//header('Content-Type: application/json');
-	header("Location: https://okhumedades.com");
+	header("Location: https://okhumedades.com/gracias-por-contactarnos.html");
 	echo json_encode($data);exit;
 	
 } else {
