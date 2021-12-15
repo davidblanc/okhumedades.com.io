@@ -110,3 +110,23 @@ stepper .nav-tabs>li:first-of-type.active:after {
     background-color: white;
     color: #217f57;
 }
+.tarj-diag  {
+    background-color: #fff9;
+    padding:2em;
+    max-width: 500px;
+    margin: auto;
+}
+
+.tarj-diag p {
+    margin: 0;
+}
+.tarj-diag .boton {
+    padding: .5em 1em;
+}
+.tarj-diag p a {
+    color: #217f57;
+    font-weight: bold;
+}
+.tarj-fondo {
+    background-image: url("/diagnostico-gratis/images/fondo-diagnostico.jpg");
+}
