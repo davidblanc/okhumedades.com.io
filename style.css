@@ -1296,3 +1296,8 @@ a:link {
     }
 }
 /*fin movil*/
+
+/* anex */
+.container-form {
+    max-width: 800px;
+}

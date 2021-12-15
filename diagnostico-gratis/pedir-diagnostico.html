@@ -133,11 +133,11 @@
                                         <span class="barra-prog"></span>
                                         <span class="text">Mi problema</span>
                                     </li>
-                                    <li role="presentation" class="active">
+                                    <li role="presentation" class="completed">
                                         <span class="barra-prog"></span>
                                         <span class="text">Diagnóstico</span>
                                     </li>
-                                    <li role="presentation" class="disabled">
+                                    <li role="presentation" class="active">
                                         <span class="barra-prog"></span>
                                         <span class="text">Presupuesto</span>
                                     </li>
@@ -150,13 +150,25 @@
             </div>
             <div class="tarj-fondo">
                 <div class="tarj-diag text-center">
-                    <h2 class="text-center">Humedades por Infiltración lateral</h2>
-                    <p class="parrafo text-center">La humedad por infiltración lateral se produce principalmente en sótanos y garajes debido a que estas superficies, están en contacto directo con la tierra sufriendo de una manera directa la presión negativa del agua.</p>
-                    <br>
-                    <p><a href="/humedades/infiltracion-lateral">Más Información ></a></p>
-                    <br>
-                    <a href="/pedir-diagnostico" class="boton text-center">Continuar</a>
-                </div>
+                    <h2 class="text-center">Solucionemos tu problema de humedad</h2>
+                    <div class="formulario">
+                      <div>
+                        <form action="/php3/send-mail-diag.php" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+                          <input require class="input_form text-input" type="text" value name="FULL_NAME" placeholder="Nombre" id="mce-FULL_NAME">   
+                          <input require class="input_form requiered phone text-input" type="tel" name="PHONE" placeholder="Teléfono/móvil" value id="mce-PHONE">
+                          <input class="input_form text-input" type="email" value name="EMAIL" placeholder="Email" id="mce-EMAIL">
+                          <select class="input_form  text-input" value name="COMMENT"  id="">
+                            <option class="option_sel" selected="true" value="Tipo de humedad" disabled="disabled" >Tipo de Humedad</option>
+                            <option class="option_sel" value="Condensación">Condensación</option>
+                            <option class="option_sel" value="Capilaridad">Capilaridad</option>
+                            <option class="option_sel" value="Filtración">Filtración</option>
+                            <option class="option_sel" value="Infiltración lateral">Infiltración lateral</option>
+                          </select>
+                          <button class="boton input_form" type="submit">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </main><!-- .site-main -->
     </div><!-- .content-area -->

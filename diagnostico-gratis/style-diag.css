@@ -130,3 +130,18 @@ stepper .nav-tabs>li:first-of-type.active:after {
 .tarj-fondo {
     background-image: url("/diagnostico-gratis/images/fondo-diagnostico.jpg");
 }
+.formulario div form {
+    display:grid;
+}
+
+/* .form-check {
+    width: 250px;
+    height: 200px;
+    
+} */
+.form-check-input{
+    font-size: 1.4em;
+}
+.form-check-label{
+   font-size: 1.4em;
+}
