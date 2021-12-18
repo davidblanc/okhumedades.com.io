@@ -42,6 +42,7 @@
     <script src="https://kit.fontawesome.com/7fc14f5637.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
+    <script src="/sc.js"></script>
     <title>OK HUMEDADES | Empresa de Humedades en Madrid</title>
 </head>
 <body>
@@ -133,11 +134,11 @@
                                         <span class="barra-prog"></span>
                                         <span class="text">Mi problema</span>
                                     </li>
-                                    <li role="presentation" class="active">
+                                    <li role="presentation" class="completed">
                                         <span class="barra-prog"></span>
                                         <span class="text">Diagnóstico</span>
                                     </li>
-                                    <li role="presentation" class="disabled">
+                                    <li role="presentation" class="active">
                                         <span class="barra-prog"></span>
                                         <span class="text">Presupuesto</span>
                                     </li>
@@ -150,13 +151,22 @@
             </div>
             <div class="tarj-fondo">
                 <div class="tarj-diag text-center">
-                    <h2 class="text-center">Humedades por Infiltración lateral</h2>
-                    <p class="parrafo text-center">La humedad por infiltración lateral se produce principalmente en sótanos y garajes debido a que estas superficies, están en contacto directo con la tierra sufriendo de una manera directa la presión negativa del agua.</p>
-                    <br>
-                    <p><a href="/humedades/infiltracion-lateral">Más Información ></a></p>
-                    <br>
-                    <a href="/diagnostico-gratis/pedir-diagnostico-infiltracion" class="boton text-center">Continuar</a>
-                </div>
+                    <h2 class="text-center">Solucionemos tu problema de humedad por capilaridad</h2>
+                    <div class="formulario">
+                      <div>
+                        <form action="/php3/send-mail-diag.php" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+                          <input require class="input_form text-input" type="text" value name="FULL_NAME" placeholder="Nombre" id="mce-FULL_NAME">   
+                          <input require class="input_form requiered phone text-input" type="tel" name="PHONE" placeholder="Teléfono/móvil" value id="mce-PHONE">
+                          <input class="input_form text-input" type="email" value name="EMAIL" placeholder="Email" id="mce-EMAIL">
+                          <select class="input_form  text-input" value name="COMMENT"  id="">
+                            <option class="option_sel" selected="true" value="Capilaridad" disabled="disabled">Capilaridad</option>
+                          </select>
+                          <span><input type="checkbox" name="politicas" id="politicas" onclick="allowPol();">He leído y acepto las <a href="https://okhumedades.com/politica-de-privacidad/" target="_blank">politicas de privacidad</a></span>
+                          <button class="boton input_form" type="submit" id="boton1" name="btn-enviar" disabled>Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </main><!-- .site-main -->
     </div><!-- .content-area -->

@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  // 
   const a = document.querySelectorAll(".select-height");
   const checkBoxes = document.querySelectorAll(".form-check-input");
 

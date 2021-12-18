@@ -1,4 +1,8 @@
 
+.formulario a {
+    color: #217f57;
+    font-weight: bold;
+}
 
 .stepper{
     margin-bottom: 2rem;
@@ -149,4 +153,13 @@ stepper .nav-tabs>li:first-of-type.active:after {
 }
 .form-check-label{
    font-size: 1.4em;
+}
+
+
+/* mediaquerys */
+
+@media (max-width: 575.98px)and (orientation:portrait) {
+    .tarj-diag  {
+        padding:0;
+    }
 }

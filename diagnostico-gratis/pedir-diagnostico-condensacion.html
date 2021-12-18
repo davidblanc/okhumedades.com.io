@@ -42,6 +42,7 @@
     <script src="https://kit.fontawesome.com/7fc14f5637.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="script.js"></script>
+    <script src="/sc.js"></script>
     <title>OK HUMEDADES | Empresa de Humedades en Madrid</title>
 </head>
 <body>
@@ -150,7 +151,7 @@
             </div>
             <div class="tarj-fondo">
                 <div class="tarj-diag text-center">
-                    <h2 class="text-center">Solucionemos tu problema de humedad</h2>
+                    <h2 class="text-center">Solucionemos tu problema de humedad por condensación</h2>
                     <div class="formulario">
                       <div>
                         <form action="/php3/send-mail-diag.php" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
@@ -158,13 +159,10 @@
                           <input require class="input_form requiered phone text-input" type="tel" name="PHONE" placeholder="Teléfono/móvil" value id="mce-PHONE">
                           <input class="input_form text-input" type="email" value name="EMAIL" placeholder="Email" id="mce-EMAIL">
                           <select class="input_form  text-input" value name="COMMENT"  id="">
-                            <option class="option_sel" selected="true" value="Tipo de humedad" disabled="disabled" >Tipo de Humedad</option>
-                            <option class="option_sel" value="Condensación">Condensación</option>
-                            <option class="option_sel" value="Capilaridad">Capilaridad</option>
-                            <option class="option_sel" value="Filtración">Filtración</option>
-                            <option class="option_sel" value="Infiltración lateral">Infiltración lateral</option>
+                            <option class="option_sel" selected="true" value="Condensación" disabled="disabled">Condensación</option>
                           </select>
-                          <button class="boton input_form" type="submit">Enviar</button>
+                          <span><input type="checkbox" name="politicas" id="politicas" onclick="allowPol();">He leído y acepto las <a href="https://okhumedades.com/politica-de-privacidad/" target="_blank">politicas de privacidad</a></span>
+                          <button class="boton input_form" type="submit" id="boton1" name="btn-enviar" disabled>Enviar</button>
                         </form>
                       </div>
                     </div>

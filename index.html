@@ -39,6 +39,7 @@
     <link href="style.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/7fc14f5637.js" crossorigin="anonymous"></script>
+    <script src="/sc.js"></script>
     <title>OK HUMEDADES | Empresa de Humedades en Madrid</title>
 </head>
 <body>
@@ -149,8 +150,9 @@
                     <option class="option_sel" value="Filtración">Filtración</option>
                     <option class="option_sel" value="Infiltración lateral">Infiltración lateral</option>
                   </select>
-                  <button class="boton input_form" type="submit">Enviar</button>
+                  <button class="boton input_form botonindex" id="boton1" type="submit" disabled>Enviar</button>
                 </form>
+                <span><input type="checkbox" name="politicas" id="politicas" onclick="allowPol();">He leído y acepto las <a href="https://okhumedades.com/politica-de-privacidad/" target="_blank">politicas de privacidad</a></span>
               </div>
             </div>
         </div>
