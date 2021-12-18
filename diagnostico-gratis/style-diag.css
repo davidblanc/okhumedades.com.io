@@ -141,6 +141,9 @@ stepper .nav-tabs>li:first-of-type.active:after {
 }
 .formulario div form {
     display:grid;
+    grid-template-rows: repeat(6,1fr);
+    grid-template-columns: none;
+    
 }
 
 /* .form-check {
