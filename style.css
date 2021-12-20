@@ -758,7 +758,6 @@ a:link {
     justify-content: space-around;
 }
 .juridica .llamanos  p {
-   
     font-size:2.5em;
     font-style: bold;
     line-height:90%;
@@ -1052,7 +1051,7 @@ a:link {
 /* COOKIES */
 .aviso-cookies {
 	display: none;
-	background: #fff;
+	background: rgba(255, 204, 74);
 	padding: 20px;
 	width: calc(100% - 40px);
 	max-width: 300px;
@@ -1063,7 +1062,7 @@ a:link {
 	right: 20px;
 	z-index: 100;
 	
-	box-shadow: 0px 2px 20px 10px rgba(222,222,222,.25);
+	box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, 0.349);
 	text-align: center;
 }
 
@@ -1087,7 +1086,7 @@ a:link {
 
 .aviso-cookies .boton {
 	width: 100%;
-	background: #595959;
+	background: rgb(67, 86, 67);
 	border: none;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
@@ -1102,7 +1101,7 @@ a:link {
 }
 
 .aviso-cookies .boton:hover {
-	background: #000;
+	background: #217f57;
 }
 
 .aviso-cookies .enlace {
