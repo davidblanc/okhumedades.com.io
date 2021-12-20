@@ -137,7 +137,6 @@ stepper .nav-tabs>li:first-of-type.active:after {
     background-image: url("/diagnostico-gratis/images/fondo-diagnostico.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-   
 }
 .formulario div form {
     display:grid;

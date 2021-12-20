@@ -100,8 +100,8 @@
                     <li><a class="dropdown-item" href="salud-humedad">Salud y humedad</a></li>
                 </ul>
               </li>
-              <li class="nav-item "  >   <!-- id="diag-boton" class="boton"-->
-                <a class="nav-link" href="#ventajas">¿Por qué nosotros?</a>
+              <li class="nav-item " id="diag-boton"  >   <!-- id="diag-boton" class="boton"-->
+                <a class="nav-link" href="/diagnostico-gratis/">¿Por qué nosotros?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="https://okhumedades.com/consejos-tratamiento-de-humedades/">Blog</a>
@@ -477,19 +477,17 @@
       </div>
     </div>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script type="text/javascript">
+  <div class="aviso-cookies" id="aviso-cookies">
+		<!-- <img class="galleta" src="./img/cookie.svg" alt="Galleta"> -->
+		<h3 class="titulo">Cookies</h3>
+		<p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios.</p>
+		<button class="boton" id="btn-aceptar-cookies">De acuerdo</button>
+		<a class="enlace" href="https://okhumedades.com/politica-de-privacidad" target="_blank">Aviso de Cookies</a>
+	</div>
+	<div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
 
-    $(document).ready(function() {
-      setTimeout(function() {
-        const ventana = document.querySelector("#pop-okhumedades");
-        if (!window.sessionStorage.getItem("mostrarModal")) {
-          window.sessionStorage.setItem("mostrarModal", "no");
-          ventana.classList.remove("modal-okh");
-          ventana.classList.add("modal-show");
-        }
-      }, 6000);
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="/js/cookies.js"></script>
+
 </body>
 </html>
