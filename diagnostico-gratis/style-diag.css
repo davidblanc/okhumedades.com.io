@@ -115,6 +115,12 @@ stepper .nav-tabs>li:first-of-type.active:after {
     background-color: white;
     color: #217f57;
 }
+
+.tarj-layer .tarj-diag {
+    margin:0;
+    height:auto;
+}
+
 .tarj-diag  {
     background-color: #fff9;
     padding:2em;
@@ -122,6 +128,8 @@ stepper .nav-tabs>li:first-of-type.active:after {
     margin: auto;
     height: 100%;
 }
+
+
 
 .tarj-diag p {
     margin: 0;
@@ -134,9 +142,33 @@ stepper .nav-tabs>li:first-of-type.active:after {
     font-weight: bold;
 }
 .tarj-fondo {
+ 
     background-image: url("/diagnostico-gratis/images/fondo-diagnostico.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    
+}
+.tarj-layer{
+    display: flex;
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+}
+
+.tarj-diag-text h3{
+  padding-top: 2em;
+}
+
+.tarj-layer h2,
+.tarj-layer h3 {
+    font-variant:small-caps;
+}
+.tarj-diag-text a{
+    font-size: 2em;
+    align-content: center;
+}
+.tarj-diag-text a:hover{
+    color: #217f57
 }
 .formulario div form {
     display:grid;
@@ -154,7 +186,7 @@ stepper .nav-tabs>li:first-of-type.active:after {
     font-size: 1.4em;
 }
 .form-check-label{
-   font-size: 1.4em;
+    font-size: 1.4em;
 }
 
 
@@ -163,5 +195,10 @@ stepper .nav-tabs>li:first-of-type.active:after {
 @media (max-width: 575.98px)and (orientation:portrait) {
     .tarj-diag  {
         padding:0;
+    }
+    .tarj-layer{
+        display: flex;
+        flex-direction:column-reverse;
+        
     }
 }
