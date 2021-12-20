@@ -282,12 +282,12 @@ a:link {
     font-size: .6em;
 }
 
-.portada__text .boton {
+.portada__text .diagnosticar-btn .boton {
     background-color: rgb(255, 204, 74);
     color:rgb(67, 86, 67);
 }
 
-.portada__text .boton:hover {
+.portada__text .diagnosticar-btn .boton:hover {
     background-color:rgb(241, 218, 158);
     color:rgb(67, 86, 67);
 }
