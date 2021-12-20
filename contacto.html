@@ -139,13 +139,17 @@
                         <h2 class="text-center">Te llamamos</h2>
                         <div class="formulario">
                         <div>
-                            <form action="/php3/send-mail-diag.php" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
+                            <form action="/php3/send-mail-contacto.php" accept-charset="UTF-8" enctype="multipart/form-data" method="POST">
                             <input require class="input_form text-input" type="text" value name="FULL_NAME" placeholder="Nombre" id="mce-FULL_NAME">   
                             <input require class="input_form requiered phone text-input" type="tel" name="PHONE" placeholder="Teléfono/móvil" value id="mce-PHONE">
                             <input class="input_form text-input" type="email" value name="EMAIL" placeholder="Email" id="mce-EMAIL">
                             <select class="input_form  text-input" value name="COMMENT"  id="">
-                                <option class="option_sel" selected="true" value="Capilaridad" disabled="disabled">Capilaridad</option>
-                            </select>
+                                <option class="option_sel" selected="true" value="Tipo de humedad" disabled="disabled" >Tipo de Humedad</option>
+                                <option class="option_sel" value="Condensación">Condensación</option>
+                                <option class="option_sel" value="Capilaridad">Capilaridad</option>
+                                <option class="option_sel" value="Filtración">Filtración</option>
+                                <option class="option_sel" value="Infiltración lateral">Infiltración lateral</option>
+                              </select>
                             <span><input type="checkbox" name="politicas" id="politicas" onclick="allowPol();">He leído y acepto las <a href="https://okhumedades.com/politica-de-privacidad/" target="_blank">politicas de privacidad</a></span>
                             <button class="boton input_form" type="submit" id="boton1" name="btn-enviar" disabled>Enviar</button>
                             </form>

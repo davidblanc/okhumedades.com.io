@@ -300,7 +300,7 @@ a:link {
     border:none;
     background-color:rgb(67, 86, 67);   
     color:#fff;
-    border-radius: 3px;
+    border-radius: 5px;
     align-content: space-between;
     padding: .3em .5em;
 }
@@ -312,6 +312,7 @@ a:link {
     background-color:rgba(0, 0, 0, 0.479); 
     color: rgb(190, 190, 190);
     cursor:not-allowed;
+    box-shadow: 0px 0px 10px rgba(228, 228, 228, 0);
 }
 .diagnosticar-btn {
     display: flex;
@@ -320,12 +321,12 @@ a:link {
 
 
 .boton:hover {
-    background-color:rgb(74, 128, 74);  ;
+    background-color:rgb(74, 128, 74);  
+    box-shadow: 0px 0px 10px rgb(228, 228, 228);
 }
 
 .diagnosticar-btn a{
     margin: auto;
-    
 }
 
 .formulario{
