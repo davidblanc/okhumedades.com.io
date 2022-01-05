@@ -21,7 +21,7 @@ if( !empty($name) && !empty($phone)) {
 	}
 
 	// Email will be send
-	$to =  "nandogomezm@gmail.com"; //"nandogomezm@gmail.com"; // Change with your email address
+	$to =  "hola@okhumedades.com"; //"nandogomezm@gmail.com"; // Change with your email address
 	$sub = "Okhumedades - Contacto Home"; // You can define email subject
 	// HTML Elements for Email Body
 	$body = <<<EOD
