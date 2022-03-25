@@ -505,16 +505,25 @@ a:link {
     border-radius: 10px;
     
 }
+
+.card-arti{
+    background-color:#e6e5e1;
+}
 .card img{
     border-radius: 10px;
     width: 100%;
     height: auto;
 }
 
+.img-arti {
+    max-height: 400px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
 .card-img-top {
     padding: 1em 2em;
     border-radius:40px !important;
-
 }
 .card-title {
     font-weight: bold;
