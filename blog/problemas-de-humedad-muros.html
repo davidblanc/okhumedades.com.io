@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta name="description"
+        content="Identifica las Humedades por Capilaridad para eliminarla definitivamente. OK Humedades brinda los mejores tratamientos antihumedad.">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="/node_modules/normalize.css/" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;500&display=swap" rel="stylesheet">
+
+    <link href="/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7fc14f5637.js" crossorigin="anonymous"></script>
+    <title>Humedades por Capilaridad | OK HUMEDADES</title>
+</head>
+
+<body>
+    <header>
+        <div class="barra-sup">
+            <div class="barra-sup__logo">
+                <img src="" alt="">
+            </div>
+            <div class="barra-sup__tel">
+                <a href="tel:911590325">
+                    <p><i class="fas fa-phone-alt"></i>911590325</p>
+                </a>
+            </div>
+            <div class="barra-sup__iconos">
+                <a href="https://www.instagram.com/ok.humedades/"><i class="fab fa-instagram-square"></i></a>
+                <a href="https://www.facebook.com/okhumedades"><i class="fab fa-facebook-square"></i></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a class="navbar-brand" href="/">
+                    <img src="/images/logo-header.svg" alt="Logo de OK Humedades" width="" height=""
+                        class="d-inline-block align-text-top">
+                </a>
+                <!-- Botón toogle -->
+                <div>
+                    <span id="menu-text">MENÚ</span>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <!-- Menú -->
+                <div class="collapse navbar-collapse justify-content-between" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height:600px;">
+                        <li class="nav-item" style="visibility: hidden;">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Humedades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/humedades/humedad-condesacion">Condensación</a></li>
+                                <li><a class="dropdown-item" href="/humedades/humedad-capilaridad">Capilaridad</a></li>
+                                <li><a class="dropdown-item" href="/humedades/humedad-filtracion">Filtración</a></li>
+                                <li><a class="dropdown-item" href="/humedades/infiltracion-lateral">Infiltración
+                                        lateral</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Consecuencias
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="/humedad-casa">Humedades en casa</a></li>
+                                <li><a class="dropdown-item" href="/moho-paredes">Moho en paredes</a></li>
+                                <li><a class="dropdown-item" href="/salud-humedad">Salud y humedad</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <!-- id="diag-boton" class="boton"-->
+                            <a class="nav-link boton" href="../diagnostico-gratis/">Diagnóstico Gratis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"
+                                href="https://okhumedades.com/blog/">Blog</a>
+                        </li>
+                        <li class="nav-item" id="boton-contacto">
+                            <a class="nav-link" href="#">Contacto</a>
+                            <div class="contacto-nav">
+                                <p><a href="mailto:hola@okhumedades.com"><i class="fas fa-envelope"></i>
+                                        hola@okhumedades.com</a></p>
+                                <p><a href="https://goo.gl/maps/SUEddFQXu78vprvj7" target="_blank"><i
+                                            class="fas fa-map-marker-alt"></i> Paseo de la Castellana 91, 28046,
+                                        Madrid</a></p>
+                                <p><a href="tel:911590325"><i class="fas fa-mobile-alt"></i> Teléfono: +911590325</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <article class="articulo-okh-tag">
+                <div class="articulo-okh">
+                    <section>
+                        <h1>CONSECUENCIAS DE LOS PROBLEMAS DE HUMEDAD EN MUROS</h1>
+                        <div class="art-img"><img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_650,h_450/https://okhumedades.com/wp-content/uploads/2022/02/Diseño-sin-título-2022-02-04T192434.521-1.jpg" width="200px"
+                                height="133px" alt="Humedad por capilaridad"></div>
+                            <p>
+                                Cuando se habla de problemas de humedad en muros, de manera inmediata aparecen en la mente los típicos problemas de humedades de casas antiguas y abandonadas. Pero no es así, la humedad puede aparecer en cualquier tipo de viviendas y debes saber cómo prevenirla para no padecer sus consecuencias.
+
+                            </p>
+                            <p>                                Es habitual que se relacione a los problemas de humedad en muros, con casas antiguas y abandonadas. Sin embargo, las humedades no son exclusivas de este tipo de construcción, sino que se pueden producir en todas las construcciones, y en todas las estancias de una vivienda -desde baños a salones, pasando por dormitorios, garajes y cocinas-; y la prevención es clave.
+                            </p>
+                            <p>                            La mayoría de los casos de problemas de humedad en muros y paredes pasan desapercibidos porque se tratan como un simple problema estético. Cierto es que las manchas de sedimentos, el moho y los desperfectos no quedan bien, pero el problema va mucho más allá.
+                            </p>
+                            <p>En primer lugar, los problemas de humedad en muros producen:
+                            </p>
+                            <p><b>Desgaste de los materiales de construcción con el consiguiente problema estructural. 
+                            </b></p>
+                            <p>Comienza dañando el yeso, el cemento o el pladur, pero las humedades pueden terminar deshaciendo los ladrillos de los muros, los revestimientos y los elementos de sujeción. 
+                            </p>
+                            <p><b>Deterioro estructural
+                            </b></p>
+                            <p>Oxida los metales de las tuberías, dañan la madera de los muebles y cualquier otro material.
+                            </p>
+                            <p><b>Graves problemas relacionados con la salud
+                            </b></p>
+                            <p>Algunas de las consecuencias de los problemas de humedad en muros las padecen quienes viven en esa casa o edificio casi sin darse cuenta. La humedad puede provocar alergias, problemas respiratorios como asma y rinitis, problemas dermatológicos y oftalmológicos, dolores articulares, infecciones y, de forma más frecuente, sensación continua de frío.
+                            </p>
+                            <p>Los problemas de humedad en muros no son una broma y, por ello, es tan importante detectar el problema cuanto antes, solucionarlo y reparar los daños causados por las humedades. 
+                            </p>
+                            <h2>CONSEJOS PARA PREVENIR LAS HUMEDADES
+                            </h2>
+                            <h3>REVISAR LOS BURLETES DE PUERTAS Y VENTANAS
+                            </h3>
+                            <p>Los burletes de puertas y ventanas sirven al mismo tiempo para realizar un cierre más hermético, evitando la entrada descontrolada del aire exterior; y al mismo tiempo realizan la función de rotura de puente térmico, evitando que las puertas y ventanas estén tan frías que causen condensaciones.
+                            </p>
+                            <p>Con la revisión del estado de los burletes y su cambio, si es necesario, conseguirás mejorar el comportamiento de las ventanas y puertas ante las condensaciones, y a su vez, las afecciones de las mismas en las paredes y los muros en los que están insertos dichos elementos.
+                            </p>
+                            <h3>REVISAR BAJANTES Y CONDUCCIONES DE AGUAS
+                            </h3>
+                            <p>Cualquier acumulación o pérdida de aguas en bajantes y conducciones de agua es muy probable que acaben filtrándose y provocando problemas de humedad en muros de la vivienda o local, por lo que una pequeña revisión periódica de la correcta evacuación de las bajantes y canalones, así como de otras conducciones de agua, evitará la desagradable sorpresa de encontrarse con los efectos que causa la humedad excesiva en las paredes y muros.
+                            </p>
+                            <h3>SEPARAR MUEBLES DE LAS PAREDES, SOBRE TODO DE LAS QUE DAN AL EXTERIOR
+                            </h3>
+                            <p>En la medida de lo posible, debes separar los muebles de paredes y muros, en especial de los que dan al exterior, ya que la más baja temperatura de los mismos puede causar que en el caso de que los muebles estén pegados a dichos elementos también estén tan fríos como ellos y se genere condensaciones en el interior de estos muebles, estropeando los materiales que los componen y lo que hay en el interior de los mismos (en especial ropa, libros y alimentos), por lo que dejar un pequeño espacio para ventilación es altamente recomendable y evita que las condensaciones excesivas entorpezcan aún más nuestra vida diaria.
+                            </p>
+                            <h3>SOLUCIONES PARA ELIMINAR LOS PROBLEMAS DE HUMEDAD EN MUROS
+                            </h3>
+                            <p>La solución a los problemas de humedad en muros se aplica en función del tipo de humedad y de las características de la construcción.
+                            </p>
+                            <h3>PROBLEMAS DE HUMEDAD EN MUROS POR CONDENSACIÓN
+                            </h3>
+                            <p>Las humedades por condensación se solucionan tras la detección de su origen, como todos los problemas de humedad. En la mayoría de los casos se da por un aislamiento insuficiente o por una mala ventilación. Completando o sustituyendo el aislamiento e instalando un sistema de extracción de aire puedes acabar con el problema de humedad en muros por condensación.
+                            </p>
+                            <p>Cabe destacar que el uso inadecuado de la calefacción tiene una importante relación con la humedad de condensación por la diferencia de temperatura entre el interior y el exterior del edificio.
+                            </p>
+                            <h3>PROBLEMAS DE HUMEDAD EN MUROS POR FILTRACIÓN
+                            </h3>
+                            <p>El primer paso para arreglar una pared con humedad por filtración es encontrar el origen de dicha filtración. Contar con el asesoramiento de especialistas en humedades es fundamental para no cometer errores en el intento. Una vez ubicada la zona y habiendo hecho las obras de reparación pertinentes, puedes quitar las humedades de la pared.
+                            </p>
+                            <p>Será importante limpiar la pared -con productos anti moho para quitar las marcas-, picando y reemplazando los materiales dañados y posterior a ello se puede aplicar una pintura impermeabilizante que proteja la zona para poder sanear las paredes con humedades.
+                            </p>
+                            <h3>PROBLEMAS DE HUMEDAD EN MUROS POR CAPILARIDAD
+                            </h3>
+                            <p>Una de las soluciones es la instalación de un sistema de electroósmosis que impida que el agua ascienda por los muros gracias a un ultrasonido que invierte los polos de los átomos de esa agua.
+                            </p>
+                            <p>Otra de las soluciones, consiste en la inyección de unas resinas especiales mediante una técnica específica para saturar los poros de los muros. Y así crear una barrera química que actúa como aislamiento hidrófugo horizontal que no permite el ascenso de la humedad.
+                            </p>
+                            <p>Los problemas de humedad en muros por capilaridad son las más complejas de solucionar porque algunas veces requieren trabajos en los muros exteriores y en el terreno. De ahí la importancia de contactar con profesionales como  OK Humedades para encontrar el método más adecuado cuanto antes.
+                            </p>
+                    </section>
+                </div>
+            </article>
+        </main>
+
+        </section>
+        <footer class="my-footer">
+            <div class="my-footer__nosotros">
+                <h5>Nosotros</h5>
+                <p>OK HUMEDADES le dará la solución definitiva a su problema. Nuestros técnicos especializados en la
+                    detección, tratamiento y solución de humedades, harán un estudio personalizado de su caso, y le dará
+                    la solución para eliminar su problema con garantía.</p>
+            </div>
+            <div class="my-footer__humedadespor">
+                <h5>Humedades por:</h5>
+                <p>Condensación</p>
+                <p>Capilaridad</p>
+                <p>Filtración</p>
+                <p>Terrazas</p>
+            </div>
+            <div class="footer-servicios">
+                <h5>Servicios</h5>
+                <p>Diagnóstico gratuito</p>
+                <p>Financiación a medida</p>
+                <p>Garantía hasta 30 años</p>
+                <p>Profesionales colegiados</p>
+            </div>
+            <div class="footer-contacto">
+                <h5>Contacto</h5>
+                <p><a href="mailto:hola@okhumedades.com"><i class="fas fa-envelope"></i>hola@okhumedades.com</a></p>
+                <p><a href="https://okhumedades.com"><i class="fas fa-globe-europe"></i> www.okhumedades.com</a></p>
+                <p><a href="https://goo.gl/maps/SUEddFQXu78vprvj7"><i class="fas fa-map-marker-alt"></i> Paseo de la
+                        Castellana 91, 28046, Madrid</a></p>
+                <p><a href="tel:911590325"><i class="fas fa-mobile-alt"></i> Teléfono: +911590325</a></p>
+                <div class="footer-redes">
+                    <a href="https://www.instagram.com/ok.humedades/" target="_blanck"><i
+                            class="fab fa-instagram-square"></a></i>
+                    <a href="https://www.facebook.com/okhumedades" target="_blanck"><i
+                            class="fab fa-facebook-square"></a></i>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
