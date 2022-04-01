@@ -1522,6 +1522,13 @@ a:link {
         min-width: 200px;    
     }
     
+    /* opiniones */
+    .boton-opi-cel{
+        display: inline !important;
+    }
+    .boton-opi{
+        display: none;
+    }
     /*  */
  }
 /*landscape*/
