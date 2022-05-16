@@ -18,17 +18,18 @@ botonAceptarCookies.addEventListener('click', () => {
 
 	localStorage.setItem('cookies-aceptadas', true);
 
+    //Se desactiva la ventana modal formulario de contacto 
     
-    $(document).ready(function() {
-        setTimeout(function() {
-        const ventana = document.querySelector("#pop-okhumedades");
-        if (!window.sessionStorage.getItem("mostrarModal")) {
-            window.sessionStorage.setItem("mostrarModal", "no");
-            ventana.classList.remove("modal-okh");
-            ventana.classList.add("modal-show");
-        }
-        }, 6000);
-    });
+    // $(document).ready(function() {
+    //     setTimeout(function() {
+    //     const ventana = document.querySelector("#pop-okhumedades");
+    //     if (!window.sessionStorage.getItem("mostrarModal")) {
+    //         window.sessionStorage.setItem("mostrarModal", "no");
+    //         ventana.classList.remove("modal-okh");
+    //         ventana.classList.add("modal-show");
+    //     }
+    //     }, 6000);
+    // });
 
 	// dataLayer.push({'event': 'cookies-aceptadas'});
 });
